@@ -1,0 +1,43 @@
+- Decide between iteration & recursion
+- Design data structures if necessary
+- Explain choice of data structures and common runtime of operations
+- Clarify data types (if data is int, long, float, double)
+- Check if data is sorted
+- Remember recursion takes STACK space, and remember StackOverflow
+- Recursion base case!!!!
+- cover all edge cases
+- debug a simple case (at least)
+- present time and space complexity in O notation, explain tradeoffs
+
+- remember that unsigned types are always >= 0 
+- Float point: DO NOT compare with == ... check if difference is < then episilon
+    episilon = 0.000001
+    Math.abs(a - b) < episilon (equals)
+    Math.abs(a - b) > episilon (different)
+- String: charset is IMPORTANT 
+    ASCII: 8bits - 256
+    Unicode: UTF8, UTF16 
+     
+- GOTCHAS:
+    - List.add with no index parameter always adds element to the END of list.
+    - LinkedList has remove() that removes element from the START of the list. (add, remove work like a queue)
+    - Set is a Collection, use add, remove, contains
+    - ArrayList needs index remove(i) to remove element
+    - Java LinkedList is a doubly-linked list
+    - Array.length, String.length(), Collection.size()
+    - Map: put(k, v), get(k), containsKey(k), containsValue(v) 
+    - Map: for (Map.Entry<Integer, Integer> e : map.entrySet()) a += e.getValue() * e.getKey();
+    - Queue: add, remove, peek, offer, poll
+    - Queue: offer and poll do not thow exceptions
+    - Stack: push, pop
+    - PriorityQueue = Java MIN HEAP (use add, remove, peek returns MIN)
+    - PriorityQueue can be a MAX heap using: maxHeap = new PriorityQueue<Integer>((i1, i2) -> i2.compareTo(i1))
+
+    
+
+
+
+Missing
+1.6
+6* 
+7*
