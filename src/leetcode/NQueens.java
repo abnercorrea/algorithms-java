@@ -6,7 +6,7 @@ import java.util.List;
 
 public class NQueens {
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> solutions = new ArrayList();
+        List<List<String>> solutions = new ArrayList<>();
 
         solveNQueens(n, 0, new int[n], solutions);
 
@@ -41,7 +41,7 @@ public class NQueens {
     }
 
     public List<String> generateBoard(int[] solution) {
-        List<String> board = new ArrayList();
+        List<String> board = new ArrayList<>();
 
         char[] line = new char[solution.length];
 
@@ -56,5 +56,17 @@ public class NQueens {
         }
 
         return board;
+    }
+
+    public static void main(String args[]) {
+        int n = 8;
+        List<List<String>> solutions = new NQueens().solveNQueens(n);
+
+        System.out.println(solutions.size());
+
+        solutions.forEach((solution) -> {
+            solution.forEach(System.out::println);
+            System.out.println();
+        });
     }
 }
